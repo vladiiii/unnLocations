@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Poo Map</title>
+</head>
+<body>
+  <h1>Какашки Какашечки</h1>
+  <div id = map>
+    <script>
+
+      function initMap() {
+
+          var msk = {lat: 56.298559, lng: 43.961393};
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 12,
+              center: msk
+          });
+        
+        var emoji = 'poo.png';
+        
+        
+        var marker = new google.maps.Marker({
+        position: {lat: 56.299657, lng: 43.982443},
+        animation: google.maps.Animation.DROP,
+        icon: emoji,
+        map: map,
+        title: 'Hello World!'
+          });
+        var marker1 = new google.maps.Marker({
+        position: {lat: 56.312970, lng: 43.989805},
+        animation: google.maps.Animation.DROP,
+        icon: emoji,
+        map: map,
+        title: 'Hello World!'
+          });
+        var marker2 = new google.maps.Marker({
+        position: {lat: 56.312678, lng: 44.007662},
+        animation: google.maps.Animation.DROP,
+        icon: emoji,
+        map: map,
+        title: 'Hello World!'
+          });
+        var marker2 = new google.maps.Marker({
+        position: {lat: 56.290003, lng: 43.930118},
+        animation: google.maps.Animation.DROP,
+        icon: emoji,
+        map: map,
+        title: 'Hello World!'
+          });
+      }
+    </script>
+  </div>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkzkZPPiXc33MoML1fSR-Gqf9XzeSqWqY&callback=initMap">
+</script>
+</body>
+</html>
+
+
+ 
